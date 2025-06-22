@@ -43,7 +43,7 @@ CSS INDEX
 :root {
   --black: #000;
   --white: #fff;
-  --ul-primary: #7065F0;
+  --ul-primary: #5f5d6db2;
   --ul-secondary: #000929;
   --ul-gray: #EBEBEB;
   --ul-black: #111111;
@@ -77,7 +77,7 @@ img {
 a {
   text-decoration: none;
   display: inline-block;
-  color: var(--black);
+  color: rgb(246, 238, 238);
 }
 a:hover {
   color: var(--ul-primary);
@@ -322,7 +322,7 @@ button {
   font-size: clamp(13px, 0.84vw, 16px);
   line-height: 100%;
   letter-spacing: -0.01em;
-  color: var(--ul-primary);
+  color: rgba(154, 154, 171, 0.625);
   margin-bottom: clamp(7px, 0.89vw, 17px);
   display: inline-block;
 }
@@ -1884,7 +1884,7 @@ button {
   padding: 0;
 }
 .ul-project.ul-featured-property .ul-project-price {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(27, 11, 11, 0.5);
   margin-bottom: clamp(15px, 1.05vw, 20px);
   font-weight: 400;
 }
@@ -2483,6 +2483,29 @@ button {
   text-align: left;
   gap: clamp(11px, 0.74vw, 14px);
 }
+.boton-asesor {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre ícono y texto */
+  padding: 12px 20px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton-asesor .icono {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.margen-arriba {
+  margin-top: 40px; 
+}
+
 .ul-app-ad-btns button i {
   font-size: clamp(21px, 1.26vw, 24px);
   padding-top: 6px;
@@ -3183,11 +3206,14 @@ button {
   color: var(--ul-primary);
 }
 .ul-inner-about-stats {
-  flex-shrink: 0;
   display: flex;
+  transform: translateX(30px);
+  gap:2rem;
+  padding-right: 2rem ;
+  margin-top: 3rem;
 }
 .ul-inner-about-stat {
-  width: clamp(86px, 6.1vw, 116px);
+  width: clamp(150px, 10vw, 116px);
   aspect-ratio: 1/1;
   border: 1px solid var(--white);
   border-radius: 50%;
@@ -3196,7 +3222,7 @@ button {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  padding: clamp(13px, 0.84vw, 16px);
+  padding: clamp(16px, 1vw, 24px);
 }
 .ul-inner-about-stat:not(:last-child) {
   margin-right: clamp(-12px, -0.63vw, -9px);
@@ -3587,7 +3613,12 @@ button {
   border-radius: 10px;
   flex-grow: 1;
 }
-
+.fichas-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;               
+  flex-wrap: wrap;         
+}
 .ul-project {
   border-radius: 10px;
   background-color: var(--white);
@@ -3598,8 +3629,10 @@ button {
   overflow: hidden;
 }
 .ul-project-img img {
-  width: 100%;
-  aspect-ratio: 365/208;
+   width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px;
 }
 .ul-project-txt {
   padding: clamp(15px, 1.58vw, 30px);
@@ -3607,7 +3640,7 @@ button {
 }
 .ul-project-tag {
   position: absolute;
-  background-color: var(--ul-primary);
+  background-color: #5c5b6c;
   top: 0;
   left: clamp(-8px, -0.42vw, -5px);
   transform: translateY(-50%);
@@ -3629,7 +3662,7 @@ button {
   left: 0;
   width: 8px;
   aspect-ratio: 1/1;
-  background-color: #5245ED;
+  background-color: #5c5b6c;
   z-index: -1;
   clip-path: polygon(0 0, 100% 0%, 100% 100%);
 }
@@ -3652,7 +3685,7 @@ button {
 .ul-project-price .number {
   font-weight: 800;
   font-size: clamp(17px, 1.05vw, 20px);
-  color: var(--ul-primary);
+  color:  rgba(2, 6, 19, 0.5);
 }
 .ul-project-title {
   font-weight: 700;
@@ -4113,7 +4146,7 @@ button {
   color: var(--ul-primary);
 }
 .ul-project-details-owner-contact-form {
-  margin: clamp(15px, 1.58vw, 30px) 0;
+  margin: clamp(9px, 1.47vw, 15px) 0;
 }
 .ul-project-details-owner-contact-form textarea,
 .ul-project-details-owner-contact-form input {
@@ -4301,7 +4334,7 @@ button {
 
 .ul-speciality-icon {
   width: clamp(56px, 3.36vw, 64px);
-  background-color: #E0DEF7;
+  background-color: #403f46;
   aspect-ratio: 1/1;
   border-radius: 999px;
   display: flex;
@@ -4336,6 +4369,12 @@ button {
   margin-bottom: 0;
   color: var(--ul-gray2);
   font-size: clamp(13px, 0.84vw, 16px);
+}
+.ul.service{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 60px;
 }
 
 .ul-services {
