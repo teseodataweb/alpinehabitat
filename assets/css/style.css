@@ -43,8 +43,8 @@ CSS INDEX
 :root {
   --black: #000;
   --white: #fff;
-  --ul-primary: #5f5d6db2;
-  --ul-secondary: #000929;
+  --ul-primary: #D4AF37;
+  --ul-secondary: #000002;
   --ul-gray: #EBEBEB;
   --ul-black: #111111;
   --ul-gray2: #6C6E76;
@@ -77,7 +77,7 @@ img {
 a {
   text-decoration: none;
   display: inline-block;
-  color: rgb(246, 238, 238);
+  color: rgb(14, 1, 1);
 }
 a:hover {
   color: var(--ul-primary);
@@ -295,9 +295,9 @@ button {
   color: var(--white);
 }
 .ul-btn:hover {
-  background-color: var(--ul-secondary);
+  background-color: #D4AF37;
   color: var(--white);
-  border-color: var(--ul-secondary);
+  border-color: #D4AF37;
 }
 
 .ul-section-heading {
@@ -861,7 +861,7 @@ button {
 .ul-header {
   position: fixed;
   top: 0;
-  padding: clamp(10px, 1.58vw, 30px) clamp(15px, 3.15vw, 60px);
+  padding: clamp(5px, 1v, 15px) clamp(15px, 3.15vw, 60px);
   color: var(--white);
   width: 100%;
   z-index: 11;
@@ -871,11 +871,11 @@ button {
   transition: 0.4s ease;
 }
 .ul-header.sticky {
-  background-color: var(--ul-primary);
+  background-color: var(--ul-secondary);
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: clamp(17px, 1.05vw, 20px);
-  padding-bottom: clamp(17px, 1.05vw, 20px);
+  padding-top: clamp(3px, 0.4vw, 7px);
+  padding-bottom: clamp(3px, 0.4vw, 7px);
 }
 .ul-header-top {
   background: var(--ul-gradient);
@@ -1083,8 +1083,8 @@ button {
 .ul-header-actions button.add-property-btn,
 .ul-header-actions a.add-property-btn {
   aspect-ratio: auto;
-  background-color: var(--white);
-  color: var(--ul-primary);
+  background-color: var(--ul-primary);
+  color: var(--ul-secondary);
   gap: 10px;
   padding: 0 clamp(15px, 1.05vw, 20px);
 }
@@ -1595,9 +1595,9 @@ button {
   font-size: clamp(15px, 0.95vw, 18px);
 }
 .ul-city-count {
-  background-color: rgba(112, 101, 240, 0.1);
+  background-color: #f9f8f2 ;
   padding: 4.5px clamp(7px, 0.53vw, 10px);
-  color: var(--ul-primary);
+  color: #000;
   font-weight: 600;
   font-size: clamp(11px, 0.74vw, 14px);
   display: block;
@@ -2027,11 +2027,11 @@ button {
   border: 2px solid transparent;
 }
 .ul-properties-tab-navs button:hover {
-  color: var(--ul-primary);
+  color: #121201;
 }
 .ul-properties-tab-navs button.active {
-  background-color: var(--white);
-  border: 2px solid #E0DEF7;
+  background-color: #D4AF37;
+  border: 2px solid var #D4AF37 ;
 }
 .ul-properties .ul-tab {
   height: 0;
@@ -2041,10 +2041,15 @@ button {
   height: auto;
 }
 .ul-properties-btn {
-  background-color: var(--ul-secondary);
-  border-color: var(--ul-secondary);
+  background-color: var(--ul-primary);
+  border-color: #fdfafb ;
   margin-top: clamp(15px, 2.1vw, 40px);
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
+
 .ul-properties-btn:hover {
   background-color: var(--ul-primary);
   border-color: var(--ul-primary);
@@ -2192,7 +2197,7 @@ button {
   position: absolute;
   content: "";
   inset: 0;
-  background-image: url(../img/stat-bg-hover.png);
+  background-image: url(../img/navarra.jpg);
   background-size: cover;
   mix-blend-mode: multiply;
   opacity: 0;
@@ -2201,7 +2206,7 @@ button {
   border-radius: 50%;
 }
 .ul-stats-item:hover {
-  background-color: var(--ul-primary);
+  background-color: #b9b9b2 ;
 }
 .ul-stats-item:hover::before {
   opacity: 1;
@@ -4394,13 +4399,13 @@ button {
   transition: border 0.3s ease;
 }
 .ul-services .ul-service:hover {
-  border-bottom: 4px solid #2516DF;
+  border-bottom: 4px solid #FFD700;
 }
 .ul-services .ul-service:hover .ul-service-title {
   color: var(--ul-primary);
 }
 .ul-services .ul-service:hover .ul-service-btn {
-  color: #2516DF;
+  color: #FFD700;
 }
 .ul-services .ul-service-icon {
   width: clamp(70px, 5.25vw, 100px);
