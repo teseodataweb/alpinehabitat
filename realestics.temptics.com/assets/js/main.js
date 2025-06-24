@@ -510,3 +510,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     }).mount(window.splide.Extensions);
 });
+

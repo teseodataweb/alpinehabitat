@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Realestics - Real Estate HTML Template</title>
+    <title>Alpine - Bienes Raices</title>
 
     <!-- libraries CSS -->
     <link rel="stylesheet" href="assets/icon/flaticon_real_estate.css" />
@@ -307,9 +307,9 @@
               <div class="col-md-5">
                 <div class="ul-contact-infos-wrapper">
                   <div class="heading">
-                    <h3 class="ul-contact-infos-title">Contact Information</h3>
+                    <h3 class="ul-contact-infos-title">Información de Contacto</h3>
                     <span class="ul-contact-infos-sub-title"
-                      >Say something to start a live chat!</span
+                      >Di algo para iniciar un chat en vivo.</span
                     >
                   </div>
 
@@ -336,8 +336,7 @@
                     >
                       <i class="flaticon-location-pin"></i>
                       <span class="txt">
-                        132 Dartmouth Street Boston, Massachusetts 02156 United
-                        States
+                        Tulancingo,Hgo.
                       </span>
                     </a>
                   </div>
@@ -405,6 +404,26 @@
                     </div>
 
                     <div class="form-group">
+                      <label for="contact-city">Ciudad</label>
+                      <input
+                        type="text"
+                        name="contact-city"
+                        id="contact-city"
+                        placeholder="Pachuca"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="contact-post-code">Código Postal</label>
+                      <input
+                        type="int"
+                        name="contact-post-code"
+                        id="contact-post-code"
+                        placeholder="46231"
+                      />
+                    </div>
+
+                    <div class="form-group">
                       <span class="contact-inner-title">¿Seleccionar Asunto?</span>
                       <div class="ul-contact-form-subjects">
                         <!-- subject 1 -->
@@ -419,7 +438,7 @@
                             <span class="checkmark"
                               ><i class="flaticon-check-2"></i
                             ></span>
-                            <span class="txt">Consulta General</span>
+                            <span class="txt">Contratar Servicios</span>
                           </label>
                         </div>
                         <!-- subject 1 -->
@@ -433,18 +452,24 @@
                             <span class="checkmark"
                               ><i class="flaticon-check-2"></i
                             ></span>
-                            <span class="txt">Consulta General</span>
+                            <span class="txt">Comprar un Lote</span>
                           </label>
                         </div>
 
-                    <div class="form-group">
-                      <label for="contact-message">Mensaje</label>
-                      <textarea
-                        name="contact-message"
-                        id="contact-message"
-                        placeholder="Escribe tu mensaje"
-                      ></textarea>
-                    </div>
+                        <div class="ul-radio">
+                          <label for="contact-subject-3">
+                            <input
+                              type="radio"
+                              name="contact-subject"
+                              id="contact-subject-3"
+                            />
+                            <span class="checkmark"
+                              ><i class="flaticon-check-2"></i
+                            ></span>
+                            <span class="txt">Comprar una Propiedad</span>
+                          </label>
+                        </div>
+
 
                     <button class="ul-btn">Enviar Mensaje</button>
                   </form>
@@ -565,9 +590,15 @@
                 <h3 class="ul-footer-widget-title">SOBRE</h3>
 
                 <div class="ul-footer-widget-links">
-                  <a href="https://alpinehabitat.com.mx/blog/">Compañia</a>
-                  <a href="projects.html">Valdepeñas</a>
-                  <a href="projects.html">Rancho Nuevo</a>
+                  <a href="project-details.html">Modelo Tenerife</a>
+                  <a href="tilo.html">Lote Privado Tilo</a>
+                  <a href="pontevedra.html">Modelo Pontevedra</a>
+                  <a href="marbella.html">Modelo Marbella</a>
+                  <a href="azucena.html">Modelo Azucena</a>
+                  <a href="arboledas.html">Modelo Arboledas</a>
+                  <a href="loterancho.html">Lotes Rancho Nuevo</a>
+                  <a href="olivo.html">Modelo Olivo</a>
+                  <a href="navarra.html">Modelo Navarra</a>
                 </div>
               </div>
             </div>
@@ -577,7 +608,11 @@
 
       <!-- footer bottom -->
       <div class="ul-footer-bottom">
-        <p class="copyright-txt">&copy;2025 Realestics. All rights reserved</p>
+        <p class="copyright-txt">&copy;Alpine Habitar by Teseo Data Lab | Todos los Derechos Reservados</p>
+        <script>
+          const year = new Date().getFullYear();
+          document.getElementById("year").textContent = year;
+        </script>
       </div>
 
       <!-- vector -->

@@ -735,7 +735,41 @@ button {
   font-weight: 700;
   color: var(--ul-primary);
 }
-
+.ul-btn-ver{
+  color: var(--white);
+  border-radius: 999px;
+  border: 1px solid var(--ul-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(36px, 2.5vw, 45px);  
+  padding: 0 24px;
+  font-weight: 600;
+  font-size: clamp(12px, 0.8vw, 15px);
+  background-color: var(--ul-primary);
+  width: fit-content;
+  margin: 20px auto;  
+}
+.ul-btn-index {
+  background-color: var(--ul-primary);
+  color: var(--ul--secondary);
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  display: block;
+  width: fit-content;
+  margin: 32px auto 0 auto; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+  transition: background-color 0.3s ease;
+}
+.ul-btn-index-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 .ul-2-section-heading {
   position: relative;
 }
@@ -3721,24 +3755,22 @@ button {
 }
 .ul-project-infos {
   display: flex;
-  gap: clamp(10px, 0.79vw, 15px);
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 2px solid #F0EFFB;
-  padding-top: clamp(10px, 0.79vw, 15px);
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 10px;;
 }
 .ul-project-info {
-  font-size: clamp(13px, 0.84vw, 16px);
   display: flex;
+  flex-direction: row; 
   align-items: center;
-  gap: clamp(7px, 0.53vw, 10px);
-  color: var(--ul-secondary);
+  gap: 6px;
+  justify-content: flex-start; 
+  text-align: left;
 }
 .ul-project-info .icon {
   color: var(--ul-primary);
-  display: inline-flex;
   font-size: clamp(18px, 1.16vw, 22px);
+  display: inline-flex;
 }
 
 .ul-project-details-heading {
@@ -4172,12 +4204,12 @@ button {
   outline: none;
 }
 .ul-project-details-wa-btn {
-  background-color: var(--ul-secondary);
+  background-color: var(--ul-primary);
   border-color: var(--ul-secondary);
 }
 .ul-project-details-wa-btn:hover {
   background-color: var(--ul-primary);
-  border-color: var(--ul-primary);
+  border-color: var(--ul-secondary);
 }
 
 .ul-hiw-step {
