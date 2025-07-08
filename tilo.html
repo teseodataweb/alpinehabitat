@@ -215,7 +215,7 @@
           <div class="ul-header-nav-wrapper">
             <div class="to-go-to-sidebar-in-mobile">
               <nav class="ul-header-nav">
-                <a href="index.html">Inicio</a>
+                <a href="/">Inicio</a>
                 <a href="about.html">Acerca de</a>
                 <a href="projects.html">Propiedades</a>
                 <a href="services.html">Servicio</a>
@@ -264,7 +264,7 @@
             <div class="wow animate__fadeInUp">
                 <h2 class="ul-breadcrumb-title">Detalle de Propiedad</h2>
                 <div class="ul-breadcrumb-nav">
-                    <a href="index.html">Inicio</a>
+                    <a href="/">Inicio</a>
                     <span class="separator"><i class="flaticon-aro-left"></i></span>
                     <span class="current-page">Detalle de Propiedad</span>
                 </div>
@@ -690,7 +690,7 @@
               <div class="ul-footer-widget">
                 <h3 class="ul-footer-widget-title">PÁGINAS</h3>
                 <div class="ul-footer-widget-links">
-                  <a href="index.html">Inicio</a>
+                  <a href="/">Inicio</a>
                   <a href="about.html">Acerca de</a>
                   <a href="projects.html">Propiedades</a>
                   <a href="services.html">Servicio</a>
@@ -720,14 +720,20 @@
         </div>
       </div>
 
-      <!-- footer bottom -->
-      <div class="ul-footer-bottom">
-        <p class="copyright-txt">&copy;Alpine Habitat by Teseo Data Lab | Todos los Derechos Reservados</p>
-        <script>
-          const year = new Date().getFullYear();
-          document.getElementById("year").textContent = year;
-        </script>
-      </div>
+<!-- Footer Bottom Unificado -->
+<div class="ul-footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; color: white; padding: 10px 20px; background-color: black;">
+    <div style="display: flex; gap: 20px;">
+      <a href="terms-of-use.html" class="footer-txt" style="color: white; text-decoration: none;">Términos de Uso</a>
+      <a href="privacy-policy.html" class="footer-txt" style="color: white; text-decoration: none;">Política de Privacidad</a>
+    </div>
+    <p class="copyright-txt" style="margin: 0;">
+      &copy; <span id="year"></span> Alpine Habitat by Teseo Data Lab | Todos los Derechos Reservados
+    </p>
+  </div>
+  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 
     <!-- libraries JS -->

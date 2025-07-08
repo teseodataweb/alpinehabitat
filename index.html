@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from realestics.temptics.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2025 16:17:58 GMT -->
+  <!-- Mirrored from realestics.temptics.com// by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2025 16:17:58 GMT -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +33,7 @@
       <!-- header -->
       <div class="ul-sidebar-header">
         <div class="ul-sidebar-header-logo">
-          <a href="index.html">
+          <a href="/">
             <img src="assets/img/Alpine.png" alt="logo" class="logo" />
           </a>
         </div>
@@ -246,7 +246,7 @@
           <!-- header left -->
           <div class="header-bottom-left">
             <div class="logo-container">
-              <a href="index.html" class="d-inline-block"
+              <a href="/" class="d-inline-block"
                 ><img src="assets/img/Alpine.png" alt="logo" class="logo"
               /></a>
             </div>
@@ -256,7 +256,7 @@
           <div class="ul-header-nav-wrapper">
             <div class="to-go-to-sidebar-in-mobile">
               <nav class="ul-header-nav">
-                <a href="index.html">Inicio</a>
+                <a href="/">Inicio</a>
                 <a href="about.html">Acerca de</a>
                 <a href="projects.html">Propiedades</a>
                 <a href="services.html">Servicio</a>
@@ -1314,7 +1314,7 @@
             <!-- <div class="row ul-bs-row"> -->
             <!-- <div class="col-4"> -->
             <div class="ul-footer-about">
-              <a href="index.html"
+              <a href="/"
                 ><img src="assets/img/Alpine.png" alt="logo"
               /></a>
               <p class="ul-footer-about-txt">
@@ -1334,7 +1334,7 @@
               <div class="ul-footer-widget">
                 <h3 class="ul-footer-widget-title">PÁGINAS</h3>
                 <div class="ul-footer-widget-links">
-                  <a href="index.html">Inicio</a>
+                  <a href="/">Inicio</a>
                   <a href="about.html">Acerca de</a>
                   <a href="projects.html">Propiedades</a>
                   <a href="services.html">Servicio</a>
@@ -1364,14 +1364,20 @@
         </div>
       </div>
 
-      <!-- footer bottom -->
-      <div class="ul-footer-bottom">
-        <p class="copyright-txt">&copy;Alpine Habitat by Teseo Data Lab | Todos los Derechos Reservados</p>
-        <script>
-          const year = new Date().getFullYear();
-          document.getElementById("year").textContent = year;
-        </script>
-      </div>
+<!-- Footer Bottom Unificado -->
+<div class="ul-footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; color: white; padding: 10px 20px; background-color: black;">
+  <div style="display: flex; gap: 20px;">
+    <a href="terms-of-use.html" class="footer-txt" style="color: white; text-decoration: none;">Términos de Uso</a>
+    <a href="privacy-policy.html" class="footer-txt" style="color: white; text-decoration: none;">Política de Privacidad</a>
+  </div>
+  <p class="copyright-txt" style="margin: 0;">
+    &copy; <span id="year"></span> Alpine Habitat by Teseo Data Lab | Todos los Derechos Reservados
+  </p>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
       <!-- vector -->
       <div class="ul-footer-vectors">
@@ -1406,5 +1412,5 @@
     <!-- <script src="assets/js/countdown.js"></script> -->
   </body>
 
-  <!-- Mirrored from realestics.temptics.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2025 16:17:58 GMT -->
+  <!-- Mirrored from realestics.temptics.com// by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Jun 2025 16:17:58 GMT -->
 </html>
