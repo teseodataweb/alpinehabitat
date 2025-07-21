@@ -3663,6 +3663,10 @@ button {
   background-color: var(--white);
   border: 2px solid #F0EFFB;
 }
+.project-aline{
+  justify-content: center !important;
+  display: flex !important;
+}
 .ul-project-img {
   border-radius: 10px 10px 0 0;
   overflow: hidden;
