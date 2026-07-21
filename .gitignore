@@ -1,0 +1,17 @@
+# Respaldos locales (no versionar: son cientos de MB)
+BKND/
+*.zip
+
+# Artefactos de HTTrack (mirror original de la plantilla)
+hts-cache/
+hts-log.txt
+backblue.gif
+fade.gif
+
+# Residuo de npm: este proyecto no usa Node
+package-lock.json
+
+# Editores / SO
+.vscode/
+.DS_Store
+Thumbs.db
